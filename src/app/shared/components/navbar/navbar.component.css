@@ -1,0 +1,21 @@
+/* Estilos para la lista de links */
+ul a {
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 3rem;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 0.2rem solid transparent;
+    transition: color 0.5s ease, border-bottom 0.3s ease, opacity 0.3s ease;
+}
+
+ul a:hover,
+ul a.active {
+    color: #3f89f4;
+    border-bottom: 3px solid #3f89f4;
+}
+
+.navbar-nav .nav-link {
+    color: #3f89f4;
+    font-weight: 600;
+}
