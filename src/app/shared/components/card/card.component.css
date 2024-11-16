@@ -1,0 +1,49 @@
+/* Estilo para las tarjetas de cursos */
+.card {
+  align-self: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 8px 15px rgba(65, 65, 65, 0.3); 
+}
+
+.card.bg-dark {
+  background-color: #343a40;
+  border-color: #3f89f4;
+  border-radius: 10px;
+}
+
+.card.bg-dark .card-title,
+.card.bg-dark .card-text {
+  color: #ffffff;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-text { 
+  margin-bottom: 0%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Cuando se expande, se muestra todo el contenido */
+.card-text.expanded {
+  display: block;
+  /* Anula las restricciones */
+  overflow: visible;
+}

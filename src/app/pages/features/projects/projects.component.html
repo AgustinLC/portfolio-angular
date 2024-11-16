@@ -1,1 +1,71 @@
-<p>projects works!</p>
+<div class="container my-5">
+    <!-- Sección de Experiencia -->
+    <section class="mb-5">
+      <h2 class="text-center mb-5">Experiencia</h2>
+      <div class="timeline d-flex flex-wrap justify-content-center gap-5">
+        <!-- Hito 1 -->
+        <div class="timeline-item card text-white">
+          <div class="timeline-icon p-1">
+            <i class="bi bi-briefcase-fill"></i>
+          </div>
+          <div class="timeline-content card-body">
+            <h4>Desarrollador FullStack - Freelance</h4>
+            <p class="text-white">Enero 2021 - Presente</p>
+            <p>Desarrollo de aplicaciones utilizando amplia gama de tecnologías.</p>
+          </div>
+        </div>
+  
+        <!-- Hito 2 -->
+        <div class="timeline-item card text-white">
+          <div class="timeline-icon p-1">
+            <i class="bi bi-building"></i>
+          </div>
+          <div class="timeline-content card-body">
+            <h4>Desarrollador FullStack - 3D.NET</h4>
+            <p class="text-white">Agosto 2024 - Presente</p>
+            <p>Desarrollo de sistemas legacy y migración a tecnologías modernas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Sección de Proyectos -->
+    <section>
+      <h2 class="text-center mb-4">Proyectos</h2>
+      <div class="row align-items-start">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Mi carrera perfecta'"
+            [description]="'Desarrollé una aplicación que funciona como un test vocacional para ayudar a los usuarios a identificar la carrera ideal para ellos. Además, proporciona información sobre las instituciones educativas donde pueden estudiar su elección. El proyecto se enfocó en la usabilidad, la personalización de resultados y el análisis de datos para ofrecer una experiencia única.'"
+            [image]="'assets/img/project-1.jpg'" 
+            [link]="'https://github.com/AgustinLC/final-proframacion-2-frontend'"
+            [button]="'Mas información'">
+          </app-card>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Consorcio de agua'"
+            [description]="'Implementé un sistema integral para la gestión de un consorcio de agua potable, permitiendo optimizar procesos como el control de consumos, la facturación, y el seguimiento de pagos. La solución fue diseñada con una interfaz intuitiva y funcionalidades escalables, garantizando la eficiencia operativa.'"
+            [image]="'assets/img/project-2.jpg'" 
+            [link]="'https://www.udemy.com/certificate/UC-5262796d-54ce-4bfb-a9d0-69bcee279b0f/'" 
+            [button]="'Mas información'">
+          </app-card>
+        </div>
+         <!-- Proyecto 3 -->
+         <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Dentoni.NET'"
+            [description]="'Trabaje en el desarrollo de un sistema especializado para la gestión de una sodería, que incluye el control de inventarios, pedidos y entregas. La aplicación facilita la organización interna y mejora la experiencia del cliente con un manejo más eficiente de los recursos y los tiempos de entrega.'"
+            [image]="'assets/img/project-3.jpg'" 
+            [link]="'https://www.udemy.com/certificate/UC-5262796d-54ce-4bfb-a9d0-69bcee279b0f/'" 
+            [button]="'Mas información'">
+          </app-card>
+        </div>
+        
+        <!-- Agrega más proyectos según sea necesario -->
+      </div>
+    </section>
+  </div>
+  

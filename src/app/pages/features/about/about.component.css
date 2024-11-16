@@ -1,0 +1,50 @@
+/* Estilo de la línea de tiempo */
+.timeline {
+    position: relative;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid #3f89f4;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -1.6rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #3f89f4;
+    border-radius: 50%;
+}
+
+.timeline-content {
+    margin-left: 1rem;
+}
+
+.timeline-content h4 {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.timeline-content .text-muted {
+    color: #b3b3b3;
+}
+
+.timeline-content p {
+    color: #e0e0e0;
+}
+
+/* Estilo de habilidades */
+.skills div {
+    margin-bottom: 20px;
+}
+
+.skills img {
+    width: 60px; 
+    height: auto;
+    max-width: 100%; 
+    margin-bottom: 10px;
+}

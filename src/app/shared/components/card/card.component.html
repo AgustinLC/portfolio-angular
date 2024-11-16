@@ -1,0 +1,14 @@
+<div class="card bg-dark text-white h-100 d-flex flex-column">
+  <img [src]="image" class="card-img-top" [alt]="title">
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">{{ title }}</h5>
+    <!-- Aplica la clase "expanded" cuando isExpanded sea true -->
+    <p class="card-text flex-grow-1" [class.expanded]="isExpanded">
+      {{ isExpanded ? description : shortDescription }}
+    </p>
+    <button class="btn btn-link pb-3 text-white" (click)="toggleExpand()">
+      {{ isExpanded ? 'Ver menos' : 'Ver más' }}
+    </button>
+    <a [href]="link" class="btn btn-primary mt-auto" target="_blank">{{ button }}</a>
+  </div>
+</div>

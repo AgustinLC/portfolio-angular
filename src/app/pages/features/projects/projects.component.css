@@ -1,0 +1,41 @@
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .timeline-item {
+    width: 500px;
+    background-color: #353535;
+    color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #3f89f4;
+    transition: transform 0.3s ease;
+  }
+  
+  .timeline-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .timeline-icon {
+    font-size: 2rem;
+    text-align: center;
+    color: #3f89f4;
+  }
+  
+  .timeline-content h4 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .timeline-content p {
+    margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 90%;
+    }
+  }
+  

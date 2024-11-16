@@ -1,71 +1,173 @@
 <div class="container py-5">
-    <article>
-      <section>
-        <div class="d-flex justify-content-center mb-4">
-          <h2>Educación</h2>
-        </div>
-        <ol class="list-group">
-          <li class="list-group-item">
+  <article>
+    <!-- Sección de Educación - Línea de tiempo vertical -->
+    <section>
+      <div class="d-flex justify-content-center mb-4">
+        <h2 class="text-white">Educación</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h4>Instituto de educación superior 9-021</h4>
             <span class="text-muted">2022 — 2024</span>
             <p class="mt-2">
-              Tecnico superior en desarrollo de software: El Técnico Superior en Desarrollo de Software estará capacitado 
-              para diseñar, construir, verificar, depurar, optimizar y mantener artefactos de software, reutilizando 
-              elementos existentes o programándolos desde cero.
+              Técnico Superior en Desarrollo de Software: Capacitado para diseñar, construir, verificar, depurar,
+              optimizar y mantener artefactos de software, reutilizando elementos existentes o programándolos desde
+              cero.
             </p>
-          </li>
-          <li class="list-group-item">
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
             <h4>Escuela 4-062 Prof. Juana B. Albornoz de Cortés</h4>
             <span class="text-muted">2012 — 2017</span>
             <p class="mt-2">
-              Técnico en Industrias de Proceso: El tecnico en industrias de procesos esta capacitado para desempeñarse 
-              en diversas áreas industriales, enfocándose en la operación, mantenimiento y optimización de procesos 
-              productivos.
+              Técnico en Industrias de Proceso: Capacitado para desempeñarse en diversas áreas industriales, enfocándose
+              en la operación, mantenimiento y optimización de procesos productivos.
             </p>
-          </li>
-        </ol>
-      </section>
-      <section class="mt-5">
-        <div class="d-flex justify-content-center mb-4">
-          <h2>Mis habilidades</h2>
+          </div>
         </div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <h5>Java</h5>
-              <span class="badge bg-primary">80%</span>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <h5>Spring Boot</h5>
-              <span class="badge bg-primary">70%</span>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <h5>Javascript</h5>
-              <span class="badge bg-primary">50%</span>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <h5>HTML</h5>
-              <span class="badge bg-primary">70%</span>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <h5>CSS</h5>
-              <span class="badge bg-primary">60%</span>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <div class="d-flex justify-content-between">
-              <h5>SQL</h5>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </article>
-  </div>
+      </div>
+    </section>
+
+    <!-- Sección de Cursos - Tarjetas con certificados -->
+    <section class="mt-5">
+      <div class="d-flex justify-content-center mb-4">
+        <h2 class="text-white">Cursos y Certificados</h2>
+      </div>
+      <div class="row align-items-start">
+        <!-- Card de ejemplo para un curso -->
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Java en Udemy'"
+            [description]="'Desarrollé habilidades avanzadas en Java, sobre programación orientada a objetos, excepciones, y aplicaciones escalables.'"
+            [image]="'assets/img/curso-java.jpg'" 
+            [link]="'https://www.udemy.com/certificate/UC-5262796d-54ce-4bfb-a9d0-69bcee279b0f/'"
+            [button]="'Ver certificado'">
+          </app-card>
+        </div>
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Desarrollo web en Udemy'"
+            [description]="'Aprendí a crear sitios web interactivos usando HTML, CSS y JavaScript, y desarrollé habilidades en diseño web y responsive.'"
+            [image]="'assets/img/curso-desarrollo-web.jpg'" 
+            [link]="'https://www.udemy.com/certificate/UC-427f5bfa-2e45-4dc5-b296-2f03d2f32481/'"
+            [button]="'Ver certificado'">
+          </app-card>
+        </div>
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'SQL 1 en Udemy'"
+            [description]="'Conceptos fundamentales de SQL, incluyendo consultas, manipulación de datos y administración básica'"
+            [image]="'assets/img/curso-sql-1.jpg'" 
+            [link]="'https://www.udemy.com/certificate/UC-550da5f9-2a2f-4c16-bdbe-0b9f5d65ddc0/'"
+            [button]="'Ver certificado'">
+          </app-card>
+        </div>
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'SQL 2 en Udemy'"
+            [description]="'Desarrollé conocimientos avanzados en SQL, trabajando con subconsultas, joins complejos y optimización de consultas.'"
+            [image]="'assets/img/curso-sql-2.jpg'" 
+            [link]="'https://www.udemy.com/certificate/UC-673c0ad6-9d07-426a-b2f5-0653d65ceae4/'"
+            [button]="'Ver certificado'">
+          </app-card>
+        </div>
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Tester en Edutin'"
+            [description]="'Me formé en pruebas de software, aprendiendo a diseñar, ejecutar y documentar pruebas para asegurar la calidad de las aplicaciones.'"
+            [image]="'assets/img/curso-tester.jpg'" 
+            [link]="'https://app.edutin.com/verify/6883392'"
+            [button]="'Ver certificado'">
+          </app-card>
+        </div>
+        <div class="col-md-4 mb-4">
+          <app-card 
+            [title]="'Programación en Linkedin'"
+            [description]="'Obtuve una comprensión sólida de los fundamentos de la programación, cubriendo lógica, algoritmos y estructuras de control.'"
+            [image]="'assets/img/curso-fundamentos-programacion.jpg'" 
+            [link]="'https://www.linkedin.com/learning/certificates/3b106bcf318739f575737353fdea01aa042ade31a6d61569ccbbc3032d38bffd?trk=share_certificate'"
+            [button]="'Ver certificado'">
+          </app-card>
+        </div>
+        <!-- Agrega más cards aquí para cada curso -->
+      </div>
+    </section>
+
+    <!-- Sección de Habilidades - Iconos y nombres -->
+    <section class="mt-5">
+      <div class="d-flex justify-content-center mb-4">
+        <h2 class="text-white">Mis Habilidades</h2>
+      </div>
+      <div class="skills row text-center text-white">
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"/>
+          <p class="mt-2">Java</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"/>
+          <p class="mt-2">Spring</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/>
+          <p class="mt-2">JavaScript</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"/>
+          <p class="mt-2">HTML</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"/>
+          <p class="mt-2">CSS</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"/>
+          <p class="mt-2">SQL</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"/>
+          <p class="mt-2">Node.js</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg"/>
+          <p class="mt-2">Angular</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"/>
+          <p class="mt-2">React</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"/>
+          <p class="mt-2">TypeScript</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/trello/trello-original.svg"/>
+          <p class="mt-2">Trello</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg"/>
+          <p class="mt-2">Postman</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg"/>
+          <p class="mt-2">Bootstrap</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"/>
+          <p class="mt-2">Git</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg"/>
+          <p class="mt-2">Git Hub</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"/>
+          <p class="mt-2">PHP</p>
+        </div>
+      </div>
+    </section>
+  </article>
+</div>
