@@ -44,6 +44,5 @@
 /* Cuando se expande, se muestra todo el contenido */
 .card-text.expanded {
   display: block;
-  /* Anula las restricciones */
   overflow: visible;
 }
